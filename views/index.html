@@ -1,34 +1,38 @@
 <!DOCTYPE html>
-
-<html>
-
-   <head>
-      <title>Request Header Parser</title>
-      <link rel="shortcut icon" href="https://cdn.hyperdev.com/us-east-1%3A52a203ff-088b-420f-81be-45bf559d01b1%2Ffavicon.ico" type="image/x-icon"/>
-      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
-      <link href="style.css" rel="stylesheet" type="text/css">
-   </head>
-
-   <body>
-      <div class="container">
-        <h1>Request Header Parser Microservice</h1>
-
-        <h2>Example Usage:</h2>
-        <p>
-          <a href="api/whoami">[base url]/api/whoami</a>
-        </p>
-
-        <h2>Example Output:</h2>
-        <p>
-          <code>{"ipaddress":"::ffff:159.20.14.100","language":"en-US,en;q=0.5",<br>"software":"Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:50.0) Gecko/20100101 Firefox/50.0"}</code>
-        </p>
-      </div>
-      <div class="footer">
-        <p>
-          by <a href="https://www.freecodecamp.org">freeCodeCamp</a>
-        </p>
-      </div>
-   </body>
-
-
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Request Header Parser</title>
+        <link href="../public/style.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" href="../public/prism.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+            rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Request Header Parser Microservice</h1>
+            <h2>Example Usage:</h2>
+            <p>
+                <a href="api/whoami">[base url]/api/whoami</a>
+            </p>
+            <h2>Example Output:</h2>
+            <p>
+                <div class="code">
+                    <pre><code class="language-json">{
+    "ipaddress": "::1",
+    "language": "en-US,en;q=0.9,ar;q=0.8,de;q=0.7,es;q=0.6",
+    "software": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36" 
+}</code></pre>
+                </div>
+            </p>
+            <p>
+                By <a href="https://gitlab.com/elliotvh" target="_blank">Elliot Hill</a>
+            </p>
+        </div>
+        <script src="../prism.js"></script>
+    </body>
 </html>
